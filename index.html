@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+    <main>
+        <h1>ip address tracker</h1>
+        <form id="form" action="/" method="post">
+            <input type="text" name="ipadress" id="ipadress" placeholder="Search for any IP address or domain" >
+            
+            <input type="submit" value=">" id="triangle">
+        </form>
+ </main>
+
+    <div id="details" class="details-none">
+      
+      
+      <div class="ip-container">
+        
+        <h1>ip address</h1>
+        <h4>106.195.4.151</h4>
+      </div>
+
+     <div class="ip-container">
+        <div class="ip">
+          <h1>Location</h1>  
+         <h4>Pune</h4>
+         <h4> State of Mahārāshtra</h4>
+        </div>
+     </div>
+
+    <div class="ip-container">
+        <div class="ip">
+          <h1>Timezone</h1>
+          <h4 class="timezone">UTC +05:30</h4>
+        
+        </div>
+    </div>
+
+    <div class="ip-container">
+      <div class="ip">
+        <h1>Isp</h1>
+        <h4 class="timezone timezone-1">Bharti Airtel Limited</h4>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="map-image">
+    <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d635623.5245650797!2d-0.352155!3d51.51497!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1625156572652!5m2!1sen!2sin"  height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+
+ <div id="details-1">
+  <h1></h1>
+ </div>
+
+  <div id="map"></div>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="script.js"></script>
+
+</body>
+</html>

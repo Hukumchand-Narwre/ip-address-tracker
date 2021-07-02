@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+}
+
+main {
+    height: 40vh;
+    background-image: url(images/pattern-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    position: relative;
+ }
+
+ form {
+   padding-top: 1rem;
+ }
+
+ #ipadress {
+  /* font-size: 2.4rem; */
+  border-radius: 20px 20px;
+  outline: none;
+  border: 1px solid black;
+  font-family: inherit;
+  color: hsl(0, 0%, 59%);
+  position: relative;
+  transition: all .3s;
+  padding-left: .4rem;
+  
+  width: 40%;
+  margin-bottom: 1rem;
+  height: 62px;
+  
+ }
+
+ #ipadress:focus  {
+  outline: none;
+   
+  font-size: 2rem;
+  
+}
+
+
+
+
+
+#ipadress::placeholder {
+   font-size: 1.5rem;
+   
+  
+}
+
+
+
+#triangle {
+  font-size: 1.65rem;
+  background-color: black;
+  color: white;
+  padding: .8rem;
+  margin-left: -2.5rem;
+  font-weight: 400;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  z-index: 2;
+  position: absolute;
+  border-radius: 0 20px 20px 0;
+  border: 2.8px solid black;
+}
+
+main h1 {
+  color: white;
+  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  padding-top: 3rem;
+}
+
+#details {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  color:hsl(0, 0%, 59%);
+  text-transform: uppercase;
+  position: relative;
+  z-index: 4;
+  margin-top: -3rem;
+  border-radius: 20px 20px;
+}
+
+#details-1 {
+  display: none;
+  width: 90%;
+  margin: 0 auto;
+  /* display: flex; */
+  justify-content: space-between;
+  background-color: white;
+  color:hsl(0, 0%, 59%);
+  text-transform: uppercase;
+  position: relative;
+  z-index: 4;
+  margin-top: -3rem;
+  border-radius: 20px 20px;
+}
+
+.details-1 {
+  display: flex;
+}
+
+#details h1 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+#details-1 h1 {
+
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+#details h4 {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+#details-1 h4 {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.container {
+  border: 1px solid hsl(0, 0%, 17%);
+}
+
+#map {
+  position: absolute;
+  top: 48%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: -2;
+  margin-top: -4rem;
+  
+}
+
+.map-image {
+  margin-top: -9rem;
+  position: relative;
+  z-index: -2;
+
+}
+
+.ip-container {
+  padding: 2rem;
+  padding-bottom: 3rem;
+  
+}
+
+.ip {
+  border-left:  1px solid hsl(0, 0%, 59%);
+  padding-left: 2rem;
+}
+
+.timezone {
+  padding-top: 1rem;
+}
+
+none {
+  display: none;
+}
+
+.google-map {
+  width: 1345px;
+}
+
+
+@media (max-width: 768px) {
+  .google-map {
+    max-width: 100%;
+    margin-top: -16rem;
+  }
+
+  #details {
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  #details-1 {
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+
+  #details h1 {
+    text-align: center;
+    font-size: 0.8rem;
+    margin-bottom: .6rem;
+  }
+
+  #details-1 h1 {
+    text-align: center;
+    font-size: 0.8rem;
+    margin-bottom: .6rem;
+  }
+
+  #details h4 {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  #details-1 h4 {
+    text-align: center;
+    font-size: 1rem;
+    
+  }
+
+  .ip {
+    border-left: 0;
+    padding-left: 0;
+  }
+
+  .ip-container {
+    padding: 0;
+    margin: 0;
+  }
+
+  .timezone {
+    padding-top: 0;
+  }
+
+  main h1 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  form {
+    text-align: center;
+  }
+
+  #triangle {
+    padding-left: 0.6rem;
+    font-size: 1.8rem;
+    padding-right: 1rem;
+  }
+  
+  #ipadress {
+    width: 85%;
+    height: 64px;
+  }
+
+  #ipadress::placeholder {
+    font-size: .9rem;
+
+ }
+ .timezone-1 {
+   padding-bottom: 1rem;
+ }
+}
